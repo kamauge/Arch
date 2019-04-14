@@ -14,11 +14,12 @@ public interface NoteDao {
     @Insert
     void insert(Note note);
 
-    @Delete
-    void delete(Note note);
-
     @Update
     void update (Note note);
+
+
+    @Delete
+    void delete(Note note);
 
     @Query("DELETE FROM note_table")
     void deleteAllNotes();
